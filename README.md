@@ -1,76 +1,80 @@
 TV Remote — ESP32 📺⚡
 
-Controle sua TV  utilizando um ESP32 via interface web responsiva acessível pelo celular.
-O projeto utiliza emissão IR (infravermelho) e servidor web embarcado no ESP32.
+Control your TV using an ESP32 through a responsive web interface accessible from your smartphone.
+The project uses IR (infrared) transmission and an embedded web server running on the ESP32.
 
-🚀 Funcionalidades
-Controle remoto via navegador
-Interface moderna e responsiva
-Controle de:
+🚀 Features
+Browser-based remote control
+Modern and responsive interface
+Control for:
 Power
 Volume
-Canais
-Navegação
+Channels
+Navigation
 Smart Hub
 Netflix
 Prime Video
-Reconexão automática ao Wi-Fi
-Feedback visual dos comandos
-Compatível com TVs  via IR
-🛠️ Tecnologias Utilizadas
+Automatic Wi-Fi reconnection
+Visual feedback for commands
+Compatible with IR-enabled TVs
+🛠️ Technologies Used
 ESP32-S3
 PlatformIO
 Arduino Framework
 ESPAsyncWebServer
 IRremoteESP8266
 AsyncTCP
-📦 Bibliotecas
+📦 Libraries
 lib_deps =
     crankyoldgit/IRremoteESP8266
     https://github.com/mathieucarbou/AsyncTCP.git
     https://github.com/mathieucarbou/ESPAsyncWebServer.git
-   https://github.com/JP-DEV-2302/Biblioteca-LED.git
+    https://github.com/JP-DEV-2302/Biblioteca-LED.git
+🔐 Wi-Fi Configuration
 
-
-Crie um arquivo secrets.cpp:
+Create a secrets.cpp file:
 
 #include "secrets.h"
 
-const char* WIFI_SSID = "SEU_WIFI";
-const char* WIFI_PASS = "SUA_SENHA";
-🔌 Hardware Utilizado
+const char* WIFI_SSID = "YOUR_WIFI";
+const char* WIFI_PASS = "YOUR_PASSWORD";
+🔌 Hardware Used
 ESP32-S3 DevKit
-LED infravermelho IR
-Resistor 220Ω
-Fonte USB
-🌐 Como Usar
-Clone o projeto:
-git clone https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git
-Abra no PlatformIO
-Configure o Wi-Fi
-Compile e envie para o ESP32
-Abra o Monitor Serial
-Acesse o IP mostrado:
+Infrared IR LED
+220Ω resistor
+USB power supply
+🌐 How to Use
+
+Clone the project:
+
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+
+Then:
+
+Open the project in PlatformIO
+Configure your Wi-Fi credentials
+Compile and upload to the ESP32
+Open the Serial Monitor
+Access the displayed IP address:
 http://192.168.x.x
 📱 Interface
 
-A interface possui:
+The interface includes:
 
-Design moderno
-Compatibilidade mobile
-Feedback visual
-Vibração ao clicar nos botões
-Animações suaves
+Modern design
+Mobile compatibility
+Visual feedback
+Vibration when pressing buttons
+Smooth animations
+🔒 Security
 
+The secrets.cpp file should remain in .gitignore to prevent Wi-Fi password leaks.
 
-O arquivo secrets.cpp deve permanecer no .gitignore para evitar vazamento da senha Wi-Fi.
-
-🧠 Futuras Melhorias
-Controle por voz
-Integração com Alexa/Google Assistant
-Suporte para outras TVs
-PWA instalável
-MQTT/Home Assistant
-👨‍💻 Autor
-
-Desenvolvido por João Pedro 🚀
+🧠 Future Improvements
+Voice control
+Alexa/Google Assistant integration
+Support for additional TV brands
+Installable PWA
+MQTT/Home Assistant integration
+👨‍💻 Author
+Developed by João Pedro
