@@ -1,0 +1,6 @@
+# Credenciais — nunca versione este arquivo
+src/secrets.cpp
+
+# PlatformIO
+.pio/
+.vscode/
