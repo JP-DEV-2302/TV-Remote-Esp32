@@ -29,8 +29,8 @@ lib_deps =
     crankyoldgit/IRremoteESP8266
     https://github.com/mathieucarbou/AsyncTCP.git
     https://github.com/mathieucarbou/ESPAsyncWebServer.git
-    https://github.com/JP-DEV-2302/Biblioteca-LED.git
-⚙️ Configuração
+   https://github.com/JP-DEV-2302/Biblioteca-LED.git
+
 
 Crie um arquivo secrets.cpp:
 
