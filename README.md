@@ -47,7 +47,7 @@ USB power supply
 
 Clone the project:
 
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
+git clone https://github.com/JP-DEV-2302/TV-Remote-Esp32.git
 
 Then:
 
